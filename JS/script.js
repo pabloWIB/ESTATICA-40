@@ -15,7 +15,7 @@ function updateIndicator() {
 	        }
 	      });
 	    }function scrollToSlide(index) {
-			const offset = index * -1100;
+			const offset = index * -450;
 			carousel.style.transform = `translateX(${offset}px)`;
 		}
 	    prevButton.addEventListener("click", () => {

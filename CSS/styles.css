@@ -6,15 +6,15 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  font-size: 16px;
+  place-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-family: "Roboto", monospace;
-  scroll-behavior: smooth;
-  overflow: hidden;
 }
-
-header {
+body header {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-size: cover;
   color: black;
   display: -webkit-box;
@@ -29,7 +29,7 @@ header {
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
 }
-header .top-carusel {
+body header .top-carusel {
   margin: 0 auto;
   width: 80%;
   display: -webkit-box;
@@ -43,16 +43,33 @@ header .top-carusel {
       -ms-flex-align: center;
           align-items: center;
   place-content: center;
+  gap: 2rem;
 }
-header .top-carusel span {
-  font-size: 2vh;
+body header .top-carusel > :nth-child(1) {
+  width: 100%;
+  max-width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
 }
-header .top-carusel h2 {
-  font-size: 6vh;
+body header .top-carusel > :nth-child(1) img {
+  width: 100%;
 }
-header .carousel-container {
-  width: 1100px;
-  height: 182.5px;
+body header .top-carusel h2, body header .top-carusel span {
+  all: unset;
+  font-size: 22px;
+}
+body header .top-carusel h2 {
+  font-size: 28px;
+  font-weight: 800;
+}
+body header .carousel-container {
+  width: 100%;
+  max-width: 450px;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -66,13 +83,10 @@ header .carousel-container {
           justify-content: space-between;
   position: relative;
   text-align: center;
+  gap: 5.5rem;
   cursor: #474747;
 }
-header .carousel-container p {
-  font-size: 3vh;
-  color: #474747;
-}
-header .carousel-container .carousel {
+body header .carousel-container .carousel {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -83,9 +97,8 @@ header .carousel-container .carousel {
   transition: transform 0.5s ease, -webkit-transform 0.5s ease;
   z-index: 100;
 }
-header .carousel-container .carousel .slide {
-  width: 1100px;
-  height: 150px;
+body header .carousel-container .carousel .slide {
+  width: 450px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -94,7 +107,11 @@ header .carousel-container .carousel .slide {
       -ms-flex-align: center;
           align-items: center;
 }
-header .carousel-container .carousel-indicator {
+body header .carousel-container .carousel .slide p {
+  all: unset;
+  font-size: 25px;
+}
+body header .carousel-container .carousel-indicator {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -104,9 +121,9 @@ header .carousel-container .carousel-indicator {
   bottom: -5px;
   z-index: 1000;
 }
-header .carousel-container .carousel-indicator .indicator-dot {
-  width: 45px;
-  height: 45px;
+body header .carousel-container .carousel-indicator .indicator-dot {
+  width: 85px;
+  height: 85px;
   background: url("../IMG/flower.png") center no-repeat;
   background-size: contain;
   cursor: pointer;
@@ -114,11 +131,15 @@ header .carousel-container .carousel-indicator .indicator-dot {
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-header .carousel-container .carousel-indicator .indicator-dot.active {
-  background: url("../IMG/flowerChecked2.png") center no-repeat;
+body header .carousel-container .carousel-indicator .indicator-dot.active {
+  background: url("../IMG/flowerChecked.png") center no-repeat;
   background-size: contain;
   cursor: pointer;
   background-size: cover;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+body header .carousel-container .prev-button, body header .carousel-container .next-button {
+  visibility: hidden;
+  opacity: 0;
 }

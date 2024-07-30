@@ -1,8 +1,8 @@
 ![alt text](image.png)
 
-<h2 align="center">Diseño Figma: <a href="https://www.figma.com/design/haNZfpMcqquvcq2ovwphE8/Slides?node-id=0-1&t=SSo9hHBbwJLUyTFw-0">Maquetado en Figma</a></h2>
+<h2 align="center">Diseño Figma: <a type="_blank" href="https://www.figma.com/design/haNZfpMcqquvcq2ovwphE8/Slides?node-id=0-1&t=SSo9hHBbwJLUyTFw-0">Maquetado en Figma</a></h2>
 
-<h2 align="center">Página: <a href="https://pablowib.github.io/ESTATICA-Slides/"></a><span>Slites.com</span></h2>
+<h2 align="center">Página: <a type="_blank" href="https://pablowib.github.io/ESTATICA-Slides/"></a>Slites.com</h2>
 
 <h2 >Tecnologías usadas👨🏻‍💻</h2>
 <br>
@@ -18,7 +18,7 @@
 <h4>Apps:</h4>
 <img src="https://skillicons.dev/icons?i=figma" />
 
-<h1>(Título)</h1>
+<h1>Slides</h1>
 
 <p>Bienvenido a Slides frontend project, diseñado por Pablo Nieto (GitHub: <a href="https://github.com/pabloWIB">pabloWIB</a>)</p>
 

@@ -2,7 +2,7 @@
 
 <h2 align="center">Diseño Figma: <a type="_blank" href="https://www.figma.com/design/haNZfpMcqquvcq2ovwphE8/Slides?node-id=0-1&t=SSo9hHBbwJLUyTFw-0">Maquetado en Figma</a></h2>
 
-<h2 align="center">Página: <a type="_blank" href="https://pablowib.github.io/ESTATICA-Slides/"></a>Slites.com</h2>
+<h2 align="center">Página: <a type="_blank" href="https://pablowib.github.io/ESTATICA-Slides/">Slites.com</a></h2>
 
 <h2 >Tecnologías usadas👨🏻‍💻</h2>
 <br>

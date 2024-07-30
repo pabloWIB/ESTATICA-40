@@ -4,18 +4,6 @@ img::selection, span::selection, div::selection, button::selection, br::selectio
   background: none;
 }
 
-::-webkit-scrollbar {
-  width: 5px;
-  background: white;
-} 
-::-webkit-scrollbar-thumb {
-  background: #5308FC;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #23036B;
-}
-
 *{
   transition: .3s;
   scroll-behavior: smooth;

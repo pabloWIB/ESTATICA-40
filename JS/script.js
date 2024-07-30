@@ -393,55 +393,13 @@ document.addEventListener("DOMContentLoaded", () => {
   updateSixthIndicator();
 });
 
-
-var nameReady = document.getElementById('nameReady');
-var formulario = document.getElementById('formulario');
-var nombre = document.getElementById('nombre');
-var nameForgot = document.getElementById('nameForgot');
-var slidesW = ("slides.site/");
-var palabrasMin = document.getElementById('palabrasMin');
-var palabrasMax = document.getElementById('palabrasMax');
-var minLength = 3;
-var maxLength = 15;
-
-formulario.addEventListener('submit', function(event) {
+const formulario = document.getElementById('formulario').addEventListener('submit', function(event){
   event.preventDefault();
-      var nombreValue = nombre.value.trim();
-      var isProhibited = false;
+})
 
-      for (var i = 0; i < listaPalabras.length; i++) {
-        if (nombreValue === listaPalabras[i]) {
-          isProhibited = true;
-          break;
-        }
-      }
-
-      if (nombreValue === '') {
-        nameForgot.textContent = "🚨 It looks like you forgot to name your page!";
-        nameReady.textContent = "";
-        palabrasMin.textContent = "";
-        palabrasMax.textContent = "";
-      } else if (isProhibited) {
-        nameForgot.textContent = "";
-        nameReady.textContent = "";
-        palabrasMin.textContent = "";
-        palabrasMax.textContent = "";
-      } else if (nombreValue.length < minLength) {
-        palabrasMin.textContent = "Name too short (Min. " + minLength + " chars)";
-        nameForgot.textContent = "";
-        nameReady.textContent = "";
-        palabrasMax.textContent = "";
-      } else if (nombreValue.length > maxLength) {
-        palabrasMax.textContent = "Name too long (Max. " + maxLength + " chars)";
-        nameForgot.textContent = ""
-        nameReady.textContent = "";
-        palabrasMin.textContent = "";
-      } else {
-        nameForgot.textContent = "";
-        nameReady.textContent = slidesW + nombreValue;
-        palabrasMin.textContent = "";
-        palabrasMax.textContent = "";
-      }
-    });
-
-
+$(function(){
+  setTimeout(function(){
+      $(".s1-header-animation").addClass("s1-header-animation-after"); 
+      $(".s1-main-animation").addClass("s1-main-animation-after");
+  }, 800);
+});

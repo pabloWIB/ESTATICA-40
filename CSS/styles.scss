@@ -99,6 +99,29 @@ body.open{
 	}
 }
 
+.s1-header-animation{
+	transform: translateY(-50%);
+	opacity: 0;
+	transition: .75s;
+
+}
+.s1-header-animation-after{
+	transform: translateX(0%);
+	opacity: 100%;
+	transition: .75s;
+
+}
+.s1-main-animation{
+	transform: scale(.4);
+	opacity: 0%;
+	transition: .75s;
+}
+.s1-main-animation-after{
+	transform: scale(1);
+	opacity: 100%;
+	transition: .75s;
+}
+
 .s1{
 	background: url('../IMG/background1.png') center no-repeat;
 	background-size: cover;
@@ -3931,35 +3954,4 @@ body.open{
 			}
 		}	
 	}
-}
-
-/* JS */
-
-.contendorJS{
-}
-
-
-.nameForgot, .palabrasNo, .palabrasMin, .palabrasMax{
-  all: unset;
-  font-size: 12px;
-  cursor: default;
-}
-
-.palabrasNo, .palabrasMin, .palabrasMax{
-  color: red;
-}
-
-.nameReady{
-  font-weight: 600;
-  background: linear-gradient(266.96deg, #B369FF 3.59%, #793CFF 87.19%);
-  -webkit-background-clip: text; 
-  background-clip: text;
-  color: transparent;
-  cursor: pointer;
-}
-
-@media (max-width: 500px){
-  .nameForgot, .palabrasNo, .palabrasMin, .palabrasMax{
-    font-size: 10px;
-  }
 }
